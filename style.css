@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.openmenu {
+    transform: translate(50%);
+}
+
+#menu {
+    width: 90vw;
+}
+#main {
+    width: 100vw;
+}
+.slideshow {
+    width: 100vw;
+    height: 90vh;
+}
+
+.slideshow .slides div {
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+    background-position: center;
+}
+
+.active {
+    opacity: 1;
+}
+.inactive {
+    opacity: 0;
+}
+#box {
+    width: 100vw;
+    height: 90vh;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 1s;
+    background-position: center;
+}
+
+.menucontainer {
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    background-color: white;
+    border-radius: 0% 0% 50% 0%;
+    width: 24vw;
+    height: 20vw;
+    padding-top: 0vw;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.27);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.1px);
+-webkit-backdrop-filter: blur(9.1px);
+border: 1px solid rgba(255, 255, 255, 1);
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 16vw;
+    height: 5px;
+    background-color: black;
+    margin: 4vw;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 4.5vw) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -4.5vw) rotate(45deg);
+  }
+
+  #container div ul li {
+    list-style: none;
+    box-shadow: none;
+    margin: 0px;
+    transition: .2s;
+  }
+  #container div ul li:hover {
+    box-shadow: 0px -3px 0px #01a0e2 inset;
+  }
+  #container div ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    display: flex;
+    font-size: 12pt;
+  }
+
+  @media screen and (min-width:480px) {
+    #box {
+        width: 100vw;
+        height: 90vh;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        transition: 1s;
+        background-position: center;
+    }
+    
+    .menucontainer {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed;
+        background-color: white;
+        border-radius: 0% 0% 50% 0%;
+        width: 60px;
+        height: 50px;
+        padding-top: 0vw;
+        /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    border: 1px solid rgba(255, 255, 255, 1);
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px;
+        transition: 0.4s;
+      }
+      
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+      }
+      
+      .change .bar2 {opacity: 0;}
+      
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+      }
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: sans-serif;
+  }
+  p {
+    font-family: sans-serif;
+    text-indent: 10%;
+    line-height: 40px;
+  }
+  * {
+    font-family: sans-serif;
+  }
